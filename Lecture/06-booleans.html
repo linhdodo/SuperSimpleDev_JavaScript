@@ -39,6 +39,7 @@
       console.log(!false);
       */
 
+      /*
       if (0) {
         console.log('truthy');
       }
@@ -52,6 +53,22 @@
       console.log(!0);
 
       console.log('text' / 5);
+
+      const variable1 = undefined;
+      console.log(variable1);
+      */
+
+      const result = 0 ? 'truthy' : 'falsy';
+      console.log(result);
+
+      false && console.log('hello');
+
+      const message = 5 && 'hello';
+      console.log(message);
+
+      const currency = undefined || 'USD';
+      console.log(currency);
+
     </script>
   </body>
 </html>
