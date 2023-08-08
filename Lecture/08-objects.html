@@ -6,6 +6,7 @@
 
   <body>
     <script>
+      /*
       const product = {
         name: 'socks',
         price: 1090
@@ -23,6 +24,109 @@
 
       delete product.newProperty;
       console.log(product);
+      */
+
+
+
+
+
+      /*
+      const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day',
+        // or
+        // 'delivery-time': '1 day'
+
+        // Nested Object
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+
+        //Function inside object = Method
+        fun: function function1() {
+          console.log('function inside object');
+        }
+      };
+
+      console.log(product2);
+      console.log(product2.name);
+      // Bracket Notation lets us use properties that don't work with dot notation
+      console.log(product2['name']);
+      console.log(product2['delivery-time']);
+      // Braket notation also allows a variable, a calculation or anything results in a value betweens the brackets
+
+      // Inside an object, we can save any type of value (numbers, strings, bulls )
+
+      console.log(product2.rating.count);
+
+      product2.fun();
+
+      console.log(typeof console.log);
+
+
+      // BUILT-IN OBJECTS 
+
+      // JSON
+      // JS to JSON
+      console.log(JSON.stringify(product2));
+
+      const jsonString = JSON.stringify(product2);
+
+      // JSON to JS
+      console.log(JSON.parse(jsonString));
+
+      // localStorage
+      */
+
+
+
+
+
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      const object1 = {
+        message: 'hello'
+      };
+      const object2 = object1;
+      // Objects are actually references 
+
+      object1.message = 'Good job!';
+      console.log(object1);
+      console.log(object2);
+
+
+      const object3 = {
+        message: 'Good job!'
+      };
+      console.log(object3 === object1);
+      console.log(object2 === object1);
+
+      const object4 = {
+        message: 'Good job!', 
+        price: 799
+      };
+      // const message = object4.message;
+      // Destructuring
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      //SHORT HAND PROPERTY
+      const object5 = {
+        // message: message
+        message,
+        // short hand method
+        //method: function function1() {
+        //  console.log('method');
+        //}
+        method() {
+          console.log('method');
+        }
+      };
+      console.log(object5);
+      object5.method();
     </script>
   </body>
 </html>
