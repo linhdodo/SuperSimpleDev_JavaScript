@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>11u</title>
+  </head>
+
+  <body>
+    <script>
+      function removeEgg(foods) {
+        const result = [];
+        let eggsRemoved = 0;
+
+        const foodsCopy = foods.slice();
+        const foodsReversed = foodsCopy.reverse();
+
+        // const foodsReversed = foodsCopy.slice().reverse(); (This is called 'method chaining')
+
+
+        for (let i = 0; i < foodsReversed.length; i++) {
+          if (foodsReversed[i] === 'egg' && eggsRemoved < 2) {
+            eggsRemoved++;
+            continue;
+          }
+          
+          result.push(foodsReversed[i]);
+        }
+
+        return result.reverse();
+      }
+
+      array1 = ['egg', 'ham', 'egg', 'egg','apple'];
+      console.log(removeEgg(array1));
+
+    </script>
+  </body>
+</html>

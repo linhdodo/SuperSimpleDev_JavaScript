@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>11v</title>
+  </head>
+
+  <body>
+    <script>
+      const result = [];
+
+      for (let i = 1; i <= 20; i++) {
+        let num = i;
+
+        if (num % 3 === 0 && num % 5 === 0) {
+          num = 'FizzBuzz';
+        } else if (num % 5 === 0) {
+          num = 'Buzz';
+        } else if (num % 3 === 0) {
+          num = 'Fizz';
+        }
+
+        result.push(num);
+      }
+
+      console.log(result);
+    </script>
+  </body>
+</html>
