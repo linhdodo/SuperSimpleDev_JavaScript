@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>11q</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+      let array1 = ['hello', 'world', 'search', 'good', 'search'];
+
+      let index = -1;
+
+      for (let i = 0; i < array1.length; i++) {
+        if (array1[i] === 'search') {
+          index = i;
+          break;
+        }
+      }
+
+      console.log(index);
+
+      array1 = ['not', 'found'];
+
+      index = -1;
+
+      for (let i = 0; i < array1.length; i++) {
+        if (array1[i] === 'search') {
+          index = i;
+          break;
+        }
+      }
+
+      console.log(index);
+      */
+
+
+      function findIndex(array, word) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            return i;
+          }
+        }
+
+        return -1;
+      }
+
+
+      array1 = ['green', 'red', 'blue', 'red'];
+      word1 = 'red';
+      console.log(findIndex(array1, word1));
+    </script>
+  </body>
+</html>
