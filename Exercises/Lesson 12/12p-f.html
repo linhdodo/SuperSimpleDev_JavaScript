@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>12p-f</title>
+  </head>
+
+  <body>
+    <button class="js-button" onclick="
+      updateButton();
+      ">
+      Add to cart
+    </button>
+
+    <p class="js-message"></p>
+
+    <script>
+      let timeoutID;
+
+      function updateButton() {
+        const messageElement = document.querySelector('.js-message');
+        messageElement.innerHTML = 'Loading...';
+
+        clearTimeout(timeoutID);
+
+        timeoutID = setTimeout(() => {
+          messageElement.innerHTML = 'Added!'
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

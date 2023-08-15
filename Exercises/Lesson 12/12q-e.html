@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>12q-e</title>
+  </head>
+
+  <body>
+    <button class="js-button">
+      Add to cart
+    </button>
+
+    <p class="js-message"></p>
+
+    <script>
+      document.querySelector('.js-button')
+        .addEventListener('click', () => {
+          const messageElement = document.querySelector('.js-message');
+          messageElement.innerHTML = 'Loading...';
+
+          setTimeout(() => {
+            messageElement.innerHTML = 'Added!'
+          }, 2000);
+        });
+    </script>
+  </body>
+</html>

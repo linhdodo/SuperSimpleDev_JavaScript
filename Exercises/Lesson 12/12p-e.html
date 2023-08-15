@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>12p-e</title>
+  </head>
+
+  <body>
+    <button class="js-button" onclick="
+      updateButton();
+      ">
+      Add to cart
+    </button>
+
+    <p class="js-message"></p>
+
+    <script>
+      function updateButton() {
+        const messageElement = document.querySelector('.js-message');
+        messageElement.innerHTML = 'Loading...';
+
+        setTimeout(() => {
+          messageElement.innerHTML = 'Added!'
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
